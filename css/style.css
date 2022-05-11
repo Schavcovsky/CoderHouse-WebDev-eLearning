@@ -26,8 +26,9 @@ html header a.logo{
 }
 
 ul { 
+  list-style: none;
   margin: 0;
-  padding: 16;
+  padding: 0;
 }
 
 header {
@@ -72,10 +73,6 @@ header a.active {
   color: var(--primary-accent-color);
 }
 
-nav ul li {
-  list-style: none;
-}
-
 .sticky {
   position: fixed;
   top: 0;
@@ -115,20 +112,6 @@ nav ul li {
   border-radius: 12px;
 }
 
-.course-description {
-  padding: 24px;
-  background-color: var(--secondary-bg-color);
-  margin: 12px;
-  border-radius: 12px;
-}
-
-.course-description {
-  padding: 24px;
-  background-color: var(--secondary-bg-color);
-  margin: 12px;
-  border-radius: 12px;
-}
-
 .course-info .title {
   font-size: 24px;
   font-weight: 500;
@@ -142,7 +125,6 @@ nav ul li {
 .course-info ul li {
   line-height: 32px;
   font-size: 16px;
-  list-style: none;
 }
 
 .course-info ul li img {
