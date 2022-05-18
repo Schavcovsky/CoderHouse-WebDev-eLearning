@@ -92,7 +92,6 @@ header a.active {
 
 .main-container .left {
   width: 66%;
-  overflow: hidden;
 }
 
 .main-container .right {
@@ -281,7 +280,7 @@ footer .center nav a {
 
 footer .right ul {
   display: flex;
-  margin-left: 87%;
+  margin-left: 80%;
 }
 
 footer ul img {
@@ -373,3 +372,78 @@ form {
   margin-top: 24px;
   width: 512px;
 }
+
+@media (max-width: 640px) { 
+  nav { 
+    margin-top: -0.3rem;
+    line-height: 16px;
+    font-size:0.9rem;
+  }
+
+  header a img {
+    margin-top: -1rem;
+  }
+
+  header li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .right ul {
+    margin-left: 33%;
+  }
+
+  footer .center {
+    margin-left: 1rem;
+  }
+
+  body .main-container { 
+    padding-top: 0;
+    padding-bottom: 0;
+  } 
+
+  body .landing .main-button {
+    max-width: 240px;
+  }
+
+  .course-page div {
+    font-size: 2rem;
+  }
+
+  .course-page .left div .title {
+    font-size: 1rem;
+  }
+
+  .course-page .left ul li {
+    font-size: 0.8rem;
+  }
+
+  .course-page .course-menu div {
+    font-size: 0.7rem;
+  }
+
+  .course-page .description {
+    font-size: 0.7rem;
+  }
+
+  .course-page ul li {
+    line-height: 1rem;
+    font-size: 0.7rem;
+  }
+
+  .course-page button {
+    font-size: 1rem;
+  }
+} 
+
+@media (max-width:960px) { 
+  body .landing .main-button {
+    width: 350px;
+  }
+} 
+
+@media (max-width:1100px) { 
+  body { } 
+} 
+
