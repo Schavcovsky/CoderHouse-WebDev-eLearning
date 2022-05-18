@@ -205,22 +205,6 @@ button {
   border-radius: 0px 12px 12px 0px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Course Description */
 
 .course-info .title {
@@ -447,3 +431,70 @@ form {
   body { } 
 } 
 
+strong::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+strong:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+strong::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: #282838;
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+strong {
+  position: relative;
+  font-size: 4rem;
+}
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+}
+
+.main-button {
+  width: 92%;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.main-button:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.main-button:focus {
+  outline: none;
+}
+
+.main-button.color-1 {
+  background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
