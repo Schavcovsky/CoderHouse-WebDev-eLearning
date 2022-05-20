@@ -118,6 +118,19 @@
         width: 100%;
         margin-top: 64px;
     }
+
+    &__title {
+        color: var(--primary-text-color);
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 2px;
+    }
+      
+    &__description {
+        color: var(--secondary-text-color);
+        font-size: 16px;
+    margin-top: 2px;
+    }
   }
   
   .course-info ul li {
@@ -196,19 +209,6 @@
   }
   
   /* Course Description */
-  
-  .course-info .title {
-    color: var(--primary-text-color);
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 2px;
-  }
-  
-  .course-info .description {
-    color: var(--secondary-text-color);
-    font-size: 16px;
-    margin-top: 2px;
-  }
   
   .course-info .description ul li {
     font-size: 16px;

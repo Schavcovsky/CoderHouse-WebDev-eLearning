@@ -120,6 +120,19 @@ header a.active {
   margin-top: 64px;
 }
 
+.course-info__title {
+  color: var(--primary-text-color);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.course-info__description {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  margin-top: 2px;
+}
+
 .course-info ul li {
   line-height: 32px;
   font-size: 16px;
@@ -193,19 +206,6 @@ button {
 }
 
 /* Course Description */
-.course-info .title {
-  color: var(--primary-text-color);
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 2px;
-}
-
-.course-info .description {
-  color: var(--secondary-text-color);
-  font-size: 16px;
-  margin-top: 2px;
-}
-
 .course-info .description ul li {
   font-size: 16px;
   margin-left: 12px;
